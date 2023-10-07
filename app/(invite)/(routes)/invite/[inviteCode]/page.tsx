@@ -40,6 +40,10 @@ const InvitePage = async ({ params }: InvitePageProps) => {
     },
   });
 
-  return <div>InvitePage</div>;
+  if (server) {
+    return redirect(`/servers/${server.id}`);
+  }
+
+  return null;
 };
 export default InvitePage;
