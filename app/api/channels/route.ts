@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     if (name === "general")
       return new NextResponse('Name cannot be "general"', { status: 400 });
 
-    const server = db.server.update({
+    const server = await db.server.update({
       where: {
         id: serverId,
         members: {
