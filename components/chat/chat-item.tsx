@@ -63,7 +63,7 @@ const ChatItem = ({
   const onMemberClick = () => {
     if (member.id === currentMember.id) return;
 
-    router.push(`/server/${params?.serverId}/conversations/${member.id}`);
+    router.push(`/servers/${params?.serverId}/conversations/${member.id}`);
   };
 
   useEffect(() => {
