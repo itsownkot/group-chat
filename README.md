@@ -2,6 +2,6 @@
 
 discord clone project
 
-Test logins:
+Test logins:\
 dummy@test.com - 123\
 dummy2@test.com - 123
